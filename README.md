@@ -1,12 +1,12 @@
-# openSUSE Jekyll Theme
+# openSUSE 中文社区 jekyll 主题
 
-Simple and readable openSUSE jekyll theme
+openSUSE 中文社区 jekyll 主题
 
-## Installation
+## 安装
 
-## Development
+## 开发
 
-### How to set up environment?
+### 如何配置环境
 
 ```bash
 sudo zypper in ruby ruby-devel
@@ -14,18 +14,18 @@ bundle config set path 'vendor/bundle'
 bundle install
 ```
 
-### How to build?
+### 如何构建网站
 
 ```bash
 bundle exec jekyll build
 ```
 
-Resulting site will be in `_site` directory.
+构建的成果应该在 `_site` 目录。
 
-### How to serve locally?
+### 如何在本地预览
 
 ```bash
 bundle exec jekyll serve
 ```
 
-Visit <http://127.0.0.1:4000/> in your browser.
+用你的浏览器访问 <http://127.0.0.1:4000/> 。
