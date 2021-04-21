@@ -5,7 +5,7 @@ email: admin@opensuse.org
 description: Latest news from the openSUSE Project
 copyright: '© 2011–2020 openSUSE 贡献者'
 baseurl: ""
-url: "https://news.opensuse.org"
+url: "https://imbearchild.github.io/jekyll-theme/"
 github_url: "https://github.com/openSUSE/news-o-o"
 
 piwik_site_id: 13
