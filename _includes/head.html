@@ -12,22 +12,22 @@
     content="{{ page.excerpt | default: locale.site_description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- stylesheet -->
-  <link rel="stylesheet" href="https://static.opensuse.org/chameleon-3.0/dist/css/chameleon.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/chameleon.css">
   <link rel="stylesheet" href="{{ '/assets/css/app.css' | relative_url }}">
 
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32">
-  <link rel="icon" href="/assets/img/favicon-48.png" sizes="48x48">
-  <link rel="icon" href="/assets/img/favicon-64.png" sizes="64x64">
-  <link rel="icon" href="/assets/img/favicon-96.png" sizes="96x96">
-  <link rel="icon" href="/assets/img/favicon-144.png" sizes="144x144">
-  <link rel="icon" href="/assets/img/favicon-192.png" sizes="192x192">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/assets/img/favicon.ico">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-48.png" sizes="48x48">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-64.png" sizes="64x64">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-96.png" sizes="96x96">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-144.png" sizes="144x144">
+  <link rel="icon" href="{{ site.url }}/assets/img/favicon-192.png" sizes="192x192">
 
   <!-- apple-touch-icon -->
-  <link rel="apple-touch-icon" href="/assets/img/favicon-144.png" sizes="144x144">
-  <link rel="apple-touch-icon" href="/assets/img/favicon-192.png" sizes="192x192">
-  <link rel="mask-icon" href="/assets/img/mask-icon.svg" color="#73ba25">
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/favicon-144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="{{ site.url }}/assets/img/favicon-192.png" sizes="192x192">
+  <link rel="mask-icon" href="{{ site.url }}/assets/img/mask-icon.svg" color="#73ba25">
 
   <!-- mobile web app data -->
   <link href="{{ '/manifest.json' | absolute_url }}" rel="manifest">
@@ -49,7 +49,7 @@
   {% endfor %} {% endif %} {% if page.image %}
   <meta property="og:image" content="{{ page.image | absolute_url }}">
   {% else %}
-  <meta property="og:image" content="/assets/img/favicon-192.png">
+  <meta property="og:image" content="{{ site.url }}/assets/img/favicon-192.png">
   {% endif %}
 
   <!-- twitter meta -->
@@ -63,17 +63,17 @@
   {% if page.image %}
   <meta name="twitter:image" content="{{ page.image | absolute_url }}">
   {% else %}
-  <meta name="twitter:image" content="/assets/img/favicon-192.png">
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/favicon-192.png">
   {% endif %}
 
   <!-- javascript -->
   {% if site.jquery_full %}
   <script defer src="https://static.opensuse.org/chameleon-3.0/dist/js/jquery.js"></script>
   {% else %}
-  <script defer src="/assets/js/jquery.slim.js"></script>
+  <script defer src="{{ site.url }}/assets/js/jquery.slim.js"></script>
   {% endif %}
-  <script defer src="/assets/js/bootstrap.bundle.js"></script>
-  <!--<script defer src="/assets/js/chameleon.js"></script>-->
+  <script defer src="{{ site.url }}/assets/js/bootstrap.bundle.js"></script>
+  <!--<script defer src="{{ site.url }}/assets/js/chameleon.js"></script>-->
 
   {% if site.piwik_site_id %}
   <!-- Piwik -->
