@@ -2,8 +2,8 @@
 layout: post
 title:  "openSUSE 风滚草滚疯啦"
 date:   2018-07-06
-categories: 测试文章 中文分类 linux opensuse
-tags: tumbleweed os opensuse 中文标签
+categories: 测试文章
+tags: Tumbleweed openSUSE 中文标签
 image: https://static.opensuse.org/chameleon-2.0/dist/images/logo/tumbleweed-green.svg
 author: Nianqing Yao (BearChild)
 ---

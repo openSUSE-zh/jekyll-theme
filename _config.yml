@@ -8,7 +8,7 @@ baseurl: ""
 url: "https://news.opensuse.org"
 github_url: "https://github.com/openSUSE/news-o-o"
 
-piwik_site_id: 13
+#piwik_site_id: 13
 
 excerpt_separator: <!--more-->
 

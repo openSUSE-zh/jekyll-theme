@@ -5,12 +5,57 @@ layout: default
 {% include post_carousel.html %}
 {% endif %}
 <div class="container my-3">
-	<div class="col-12 col-lg-9 mx-3 mx-auto">
-		<div class="row">
-			{% for post in paginator.posts %}
-			{% include single-post.html %}
-			{% endfor %}
-			{% include pagination.html %}
+	<div class="row">
+		<div id="portal-left-column" class="col-md-12">
+			<div class="card mb-3">
+				<div class="card-header"><b>
+						欢迎来到 openSUSE Linux 中文社区</b></div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-auto p-3"><a href="" class="image"><img
+									alt="Icon-distribution.png" src="{{ site.url }}/assets/img/Icon-distribution.png" width="48"
+									height="50"></a></div>
+						<div class="p-3 col border border-top-0 border-bottom-0 border-right-0">
+							<div>
+								<p>
+									openSUSE 是一个 Linux 发行版，简单易用的操作系统。
+								</p>
+								<p>
+									它的开发重心是为软件开发者和系统管理者创造适用的开放源代码的工具，并提供易于使用的桌面环境和功能丰富的服务器环境。</p>
+								<p>
+									openSUSE 中文社区是一个专门为 openSUSE 中文用户而创建的社区。希望为中文用户的学习交流提供一席之地。也希望能有更多人爱上这个自由的操作系统。</p>
+							</div>
+						</div>
+						<div style="clear:left"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="portal-left-column" class="col-md-8">
+
+			<h2>新闻与公告</h2>
+			<div class="row">
+				{% for post in paginator.posts %}
+				{% include single-post.html %}
+				{% endfor %}
+				{% include pagination.html %}
+			</div>
+		</div>
+		<div id="portal-right-column" class="col-md-4">
+			<div class="card mb-3">
+				<div class="card-header"><b>
+						入门</b></div>
+				<div class="card-body">
+					<div>
+						<p>如果您想学习如何使用 openSUSE，那么最好的方式无疑是下载 openSUSE 镜像并亲自安装使用它。期间遇到的一切问题，可以参考Wiki指南，或是在 openSUSE
+							中文论坛求助或者讨论。</p>
+
+						<p>同时也欢迎参与 openSUSE 中文社区的建设工作，如果您对社区建设有什么意见或建议，也欢迎通过社区的联系页告诉我们。</p>
+						<div style="clear:left"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
