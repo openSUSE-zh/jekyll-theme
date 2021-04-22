@@ -2,11 +2,11 @@ lang: zh
 title: openSUSE 中文社区
 title_short: 中文社区
 email: admin@opensuse.org
-description: Latest news from the openSUSE Project
-copyright: '© 2011–2020 openSUSE 贡献者'
+description: openSUSE 中文社区主页，为您带来最新的 openSUSE 资讯，为中文用户的交流提供一席之地。
+copyright: '© 2011–2021 openSUSE 中文社区贡献者'
 baseurl: ""
-url: "https://imbearchild.github.io/jekyll-theme/"
-github_url: "https://github.com/openSUSE/news-o-o"
+url: "https://opensuse-zh.github.io/jekyll-theme-opensuse-zh"
+github_url: "https://github.com/openSUSE-zh/jekyll-theme-opensuse-zh"
 
 #piwik_site_id: 13
 
@@ -41,7 +41,7 @@ date_format: '%-d. %b %Y'
 footer_links:
   -
     text: "源代码"
-    link: https://github.com/openSUSE/news-o-o
+    link: "https://github.com/openSUSE-zh/jekyll-theme-opensuse-zh"
   -
     text: "许可证"
     link: https://github.com/openSUSE/news-o-o/blob/master/LICENSE
